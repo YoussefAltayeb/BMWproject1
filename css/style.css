@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ---------------------------------------------section1-------------------------------------------- */
+.firstsection{
+    position: relative;
+}
+.headerparent{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    opacity: 0.6;
+    overflow: auto;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+.header-logo{
+    float: left;
+}
+.header-links-div{
+    float:right;
+}
+.logo-bmw{
+    margin-left: 50px;
+    width: 60px;
+    height: 50px;
+}
+.header-ul li{
+display: inline-block;
+list-style: none;    
+padding-right: 80px;
+padding-top: 15px;
+}
+.header-ul li a{
+    font-size: larger;
+    text-decoration: none;
+    color: white;
+}
+.start-div{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bmw\ background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.start-h1{
+    font-size: 80px;
+    padding-top: 150px;
+    margin-left: 650px;
+    }
+    .start-btn{
+        width: 150px;
+        height: 50px;
+        color: black;
+        background-color: white;
+        border: 3px solid #1c69d4;
+        border-radius: 10px;
+        margin: 50px 0px 0px 650px;
+        font-size: larger;
+    }
+    .btn-learnmore{
+        margin-left: 50px;
+        font-size: larger;
+    }
+    .start-btn:hover{
+        opacity: 0.7;
+    }
+       /* ---------------------------------------------section2---------------------------------------------------- */
+    .offer-img{
+        width: 250px;
+    }
+    .offer-container{
+        width: 70%;
+        height: 100vh;
+        margin: auto;
+    }
+    .offer-content{
+        text-align: center;
+        overflow: auto;
+    }
+    .offer-logo{
+        text-align: left;
+        color: #1c69d4;
+        font-size: 30px;
+    }
+    .offer-p{
+        font-size: 60px;
+        color: black;
+        margin-top: 100px;
+    }
+    .offer-item{
+        display: inline;
+        float: left;
+        width: 30%;
+        height: 180px;
+        border: solid 3px #1c69d4;
+        margin-top: 50px;
+        position: relative;
+    }
+    .offer-center{
+        margin: 50px 5% 0px 5%;
+    }
+    .offer-cartype{
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    .offer-description{
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 50px;
+    }
+    .offer-item::after{
+        position: absolute;
+        z-index: 1;
+        content: "";
+    
+        width: 0 ;
+        height: 0 ;
+    
+        top: 0;
+        left: 0;
+    
+        background-color: rgb(14, 15, 14) ;
+        opacity: 0 ;
+        transition: 0.5s;
+    }
+    .offer-item:hover::after {
+        width: 100%;
+        height: 100%;
+        opacity: 0.4 ;
+    }
+    .offer-item:hover .offer-cartype{
+        color:#1c69d4;
+    }
+    /* ---------------------------------------------section3------------------------------------------------------- */
+    .models-container{
+        width: 70%;
+        height: 100vh;
+        margin: auto;
+    }
+    .models-content{
+        overflow: auto;
+    }
+    .second-car-div{
+        margin: auto 5%;
+    }
+    .h1-models{
+        font-size: 60px;
+        color: black;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .line{
+        width: 250px;
+        height:4px ;
+        background-color: #1c69d4;
+        margin: auto;
+    }
+    .models-item{
+        width: 30%;
+        background-color: white;
+        border: 3px solid #1c69d4;;
+        float: left;
+        margin-top: 40px;
+        text-align: center;
+        position: relative;
+    }
+    .models-item::after{
+        position: absolute;
+        z-index: 1;
+        content: "";
+    
+        width: 100% ;
+        height: 0 ;
+    
+        top: 0;
+        left: 0;
+    
+        background-color: rgb(14, 15, 14) ;
+        opacity: 0 ;
+        transition: 0.5s;
+    }
+    .models-item:hover::after {
+        width: 100%;
+        height: 100%;
+        opacity: 0.4 ;
+    }
+    .models-item:hover .p-salary{
+        color: #1c69d4;
+    }
+    img{
+        width: 100%;
+        height: 200px;
+    }
+    .models-salary{
+    width: 100px;
+    background-color:white;
+    border: 3px solid #1c69d4;
+    border-radius: 50%;
+    margin:auto;
+    margin: 20px auto;
+    padding-top: 15px;
+    }
+    .p-salary{
+        color: black;
+        font-weight: 900;
+        font-size: 30px;
+    }
+    .models-p{
+        font-size: 25px;
+        font-weight: 600;
+        margin: 15px auto;
+    }
+    .btn-buy{
+        width: 150px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 600;
+        background-color:white;
+        border: 3px solid #1c69d4;
+        border-radius: 10px;
+        margin: 15px auto;
+    }
+     /*------------------------------------------------------------section4----------------------------------------------------*/
+     .track-container{
+        width: 100%;
+        height: 300px;
+        background-image: url(../img/track.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        margin-top: 60px;
+        position: relative;
+     }
+     .track-overley{
+        width: 100%;
+        height: 100%;
+        background-color: rgba( 0,0 , 0, 0.4) ;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+     }
+     .track-content{
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        position: absolute;
+        z-index: 2;
+     }
+     .track-item{
+        width: 25%;
+        display: inline-block;
+        float: left;
+        text-align: center;
+        margin-top: 100px;
+     }
+     .track-logo{
+        color: gold;
+        font-size: 40px;
+     }
+     .track-number{
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+     }
+     .track-text{
+        color: white;
+        font-size: 25px;
+        font-weight: 600;
+     }
+    /*------------------------------------------------------------section5----------------------------------------------------*/
+    .container{
+        width: 70%;
+        height: 100vh;
+        margin: auto;
+    }
+    .team-h1{
+        font-size: 60px;
+        color: black;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .team-content{
+        overflow: auto;
+    }
+    .team-item{
+        width: 30%;
+        border: solid 3px #1c69d4; ;
+        margin-top: 50px;
+        float: left;
+        text-align: center;
+        position: relative;
+    }
+    .team-img{
+        position: relative;
+    }
+    .team-overley{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        background-color: rgba( 0,0 , 0, 0.3) ;
+        visibility: hidden;
+    }
+    .team-overley a{
+        display: block;
+        color: white;
+        background-color: #1c69d4;
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+    }
+    .team-item:hover .team-overley{
+        visibility: visible;
+    }
+    .team-item::after{
+        position: absolute;
+        z-index: 1;
+        content: "";
+    
+        width: 100% ;
+        height: 0 ;
+    
+        top: 0;
+        left: 0;
+    
+        background-color: rgb(14, 15, 14) ;
+        opacity: 0 ;
+        transition: 0.5s;
+    }
+    .team-item:hover::after {
+        width: 100%;
+        height: 100%;
+        opacity: 0.4 ;
+    }
+    .team-item:hover .team-name{
+        color: #1c69d4;
+    }
+    .secondracerdiv{
+       margin: 50px 5% 0px 5%;
+    }
+    .team-name{
+        font-size: 25px;
+        font-weight: 600;
+        text-decoration: underline;
+        margin: 20px 0px;
+    }
+    .team-info{
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 50px;
+        margin-top: 50px;   
+    }
+    /*------------------------------------------------------------section5----------------------------------------------------*/
+
+
+
+    /*------------------------------------------------------------section11----------------------------------------------------*/
+    .footer-container{
+        width: 100%;
+        height: 40vh;
+        background-color:#1c69d4 ;
+        text-align: center;
+        /* background-color: rgba(0, 0, 0,0.5); */
+    }
+    .footer-logo{
+        width: 150px;
+        margin: auto;
+    }
+    .footer-item a{
+        color: white;
+        font-size: 30px;
+    }
+    .copyright{
+        color: white;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .myname{
+        color: white;
+        font-size: 25px;
+    }
